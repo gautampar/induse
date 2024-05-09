@@ -1,0 +1,5 @@
+.footer-line { background-image: url('../../../public/assets/home/sub-line.png'); height: 88px; width: 100%; background-repeat: no-repeat; display: flex; justify-content: space-between; padding: 0 100px; background-size: cover; background-repeat: no-repeat;}
+
+@media(max-width: 768px) {
+    .footer-line { background-image: url('../../../public/assets/home/sub-line.png'); height: auto; width: 100%; background-repeat: no-repeat; display: flex; justify-content: space-between; padding: 40px 20px; background-position: right;}
+}

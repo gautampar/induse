@@ -1,0 +1,21 @@
+.sub-header { background-image: url('../../../public/assets/home/sub-line.png'); height: 88px; width: 100%; background-repeat: no-repeat; margin-top: 62px; display: flex; justify-content: space-between; padding: 0 97px; background-size: cover; background-repeat: no-repeat; z-index: 20;}
+
+.list-item a { position: relative; padding-bottom: 32px; transition: all 0.5s;}
+.list-item .active:after { background-image: url('../../../public//assets/home/underline.svg'); width: 58px; height: 7px; content: ""; position: absolute; bottom: 0; left: 50%; transform: translate(-50%);}
+.list-item a:hover:after { background-image: url('../../../public//assets/home/underline.svg'); width: 58px; height: 7px; content: ""; position: absolute; bottom: 0; left: 50%; transform: translate(-50%);}
+.overlay { display: none; }
+
+@media(max-width: 768px) {
+    .sub-header { background-image: unset; height: 100%; width: 100%; background-repeat: no-repeat; margin-top: 70px; display: flex; flex-direction: column; justify-content: unset; padding: 0 20px; background-size: cover; background-repeat: no-repeat; z-index: 1000; width: 100%; box-shadow: rgba(31, 38, 135, 0.37) 0px 8px 32px 0px; backdrop-filter: blur(4px); border: 1px solid rgba(255, 255, 255, 0.18);
+        position: fixed; left: 0; right: 0; transition: all 0.5s;}
+        .overlay { display: block;
+            background-color: rgba(0, 0, 0, 0.66);
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0; z-index: 100;
+            transition: ease 0.5s;
+        }
+        .list-item .active:after { display: none;}
+        .list-item a:hover:after { display: none;}
+    }
